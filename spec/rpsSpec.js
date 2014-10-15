@@ -16,24 +16,29 @@ describe('To play Rock Papper Scissors', function() {
 		});
 	});	
 
-	describe('Rules decide a winner', function(){
+	describe('Rules decide a winner between', function(){
 		beforeEach(function() {
 			rock = new Rock();
 			scissors = new Scissors();	
 			rules = new Rules();		
 		});
 		
-		it('rock beats scissors', function(){
+		it('rock and scissors', function(){
 			expect(rules.decidesWinner(rock, scissors)).toEqual(rock);
 		});
 
-		it('scissors beats rock', function () {
+		it('scissors and rock', function () {
 			expect(rules.decidesWinner(scissors, rock)).toEqual(rock) 
 		});
 
-		xit('paper beats rock', function() {
+		it('paper and rock', function() {
 			paper = new Paper();
-			expect(rules.decidesWinner(paper, rock)).toEqual(paper)
+			expect(rules.decidesWinner(paper, rock)).toEqual(paper);
 		});
+
+		it('rock and paper', function(){
+			expect(rules.decidesWinner(rock, paper)).toEqual(paper);
+		});
+
 	});
 });

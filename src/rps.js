@@ -12,8 +12,9 @@ function Paper(){
 function Rules(){};
 
 Rules.prototype.decidesWinner = function(optionOne, optionTwo) {
-	if(optionOne.type === 'Rock')
+	if((optionOne.type === 'Rock' && optionTwo.type === 'Scissors') || 
+		(optionOne.type ==='Paper' && optionTwo.type === 'Rock'))
 		return optionOne;
-	else
-		return optionTwo;
+	
+	return optionTwo;
 };
