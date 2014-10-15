@@ -5,6 +5,10 @@ function Scissors(){
 	this.type = 'Scissors';
 };
 
+function Paper(){
+	this.type = 'Paper';
+};
+
 function Rules(){};
 
 Rules.prototype.decidesWinner = function(optionOne, optionTwo) {

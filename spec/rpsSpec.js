@@ -9,7 +9,12 @@ describe('To play Rock Papper Scissors', function() {
 			scissors = new Scissors();
 			expect(scissors.type).toEqual('Scissors')
 		});
-	});
+
+		it('should know it is a paper', function() {
+			paper = new Paper();
+			expect(paper.type).toEqual('Paper');
+		});
+	});	
 
 	describe('Rules decide a winner', function(){
 		beforeEach(function() {
@@ -24,6 +29,11 @@ describe('To play Rock Papper Scissors', function() {
 
 		it('scissors beats rock', function () {
 			expect(rules.decidesWinner(scissors, rock)).toEqual(rock) 
+		});
+
+		xit('paper beats rock', function() {
+			paper = new Paper();
+			expect(rules.decidesWinner(paper, rock)).toEqual(paper)
 		});
 	});
 });
