@@ -40,5 +40,18 @@ describe('To play Rock Papper Scissors', function() {
 			expect(rules.decidesWinner(rock, paper)).toEqual(paper);
 		});
 
+		it('paper and scissors', function() {
+			expect(rules.decidesWinner(paper, scissors)).toEqual(scissors);
+		});
+
+		it('scissors and paper', function() {
+			expect(rules.decidesWinner(scissors, paper)).toEqual(scissors);
+		});
+
+		it('the same gesture', function() {
+			secondRock = new Rock();
+			draw = new Draw();	
+			expect(rules.decidesWinner(rock, secondRock)).toEqual(draw);
+		});
 	});
 });
