@@ -10,7 +10,11 @@ function Paper(){
 };
 
 function Draw(){
-	this.type ="Draw";
+	this.type ='Draw';
+};
+
+function Lizard(){
+	this.type = 'Lizard';
 };
 
 function Rules(){

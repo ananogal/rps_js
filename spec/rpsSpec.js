@@ -14,6 +14,11 @@ describe('To play Rock Papper Scissors', function() {
 			paper = new Paper();
 			expect(paper.type).toEqual('Paper');
 		});
+
+		it('should know it is a lizard', function(){
+			lizard = new Lizard();
+			expect(lizard.type).toEqual('Lizard');
+		});
 	});	
 
 	describe('Rules decide a winner between', function(){
@@ -54,4 +59,6 @@ describe('To play Rock Papper Scissors', function() {
 			expect(rules.decidesWinner(rock, secondRock)).toEqual(draw);
 		});
 	});
+
+
 });
