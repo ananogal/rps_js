@@ -14,15 +14,16 @@ describe('To play Rock Papper Scissors', function() {
 	describe('Rules decide a winner', function(){
 		beforeEach(function() {
 			rock = new Rock();
-			scissors = new Scissors();			
+			scissors = new Scissors();	
+			rules = new Rules();		
 		});
 		
 		it('rock beats scissors', function(){
-			expect(rock.beat(scissors)).toEqual(true);
+			expect(rules.decidesWinner(rock, scissors)).toEqual(rock);
 		});
 
-		xit('scissors beats rock', function () {
-			expect(scissors.beat(rock)).toEqual(false) 
+		it('scissors beats rock', function () {
+			expect(rules.decidesWinner(scissors, rock)).toEqual(rock) 
 		});
 	});
 });

@@ -5,6 +5,11 @@ function Scissors(){
 	this.type = 'Scissors';
 };
 
-Rock.prototype.beat = function(option) {
-	return true;
+function Rules(){};
+
+Rules.prototype.decidesWinner = function(optionOne, optionTwo) {
+	if(optionOne.type === 'Rock')
+		return optionOne;
+	else
+		return optionTwo;
 };
