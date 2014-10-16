@@ -25,7 +25,8 @@ describe('To play Rock Papper Scissors', function() {
 		beforeEach(function() {
 			rock = new Rock();
 			scissors = new Scissors();	
-			rules = new Rules();		
+			rules = new Rules();
+			lizard = new Lizard();		
 		});
 		
 		it('rock and scissors', function(){
@@ -57,6 +58,18 @@ describe('To play Rock Papper Scissors', function() {
 			secondRock = new Rock();
 			draw = new Draw();	
 			expect(rules.decidesWinner(rock, secondRock)).toEqual(draw);
+		});
+
+		it('rock and lizard', function () {
+			expect(rules.decidesWinner(rock, lizard)).toEqual(rock);
+		});
+
+		it('lizard and rock', function(){
+			expect(rules.decidesWinner(lizard, rock)).toEqual(rock); 
+		});
+
+		it('lizard and paper', function() {
+			expect(rules.decidesWinner(lizard, paper)).toEqual(lizard);
 		});
 	});
 

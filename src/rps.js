@@ -18,15 +18,18 @@ function Lizard(){
 };
 
 function Rules(){
-	this.trump = {"Rock": "Scissors",
-				"Paper" : "Rock",
-				"Scissors" : "Paper"}	
+	this.trump = {	"Rock": {"Scissors": "crushes","Lizard" : "crushes"},
+					"Paper" : {"Rock" : "cover"},
+					"Scissors" : {"Paper":"cut"},
+					"Lizard" :{"Paper": "eats"}
+				};	
 };
 
 Rules.prototype.decidesWinner = function(optionOne, optionTwo) {
 
 	if(optionOne.type === optionTwo.type) return new Draw();
-	if(this.trump[optionOne.type] === optionTwo.type)
+
+	if(optionTwo.type in this.trump[optionOne.type] )
 		return optionOne;
 	
 	return optionTwo;
