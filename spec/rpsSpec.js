@@ -71,6 +71,11 @@ describe('To play Rock Papper Scissors', function() {
 		it('lizard and paper', function() {
 			expect(rules.decidesWinner(lizard, paper)).toEqual(lizard);
 		});
+
+		it('lizard and Spock', function() {
+			spock = new Spock();
+			expect(rules.decidesWinner(lizard, spock)).toEqual(lizard)
+		});
 	});
 
 

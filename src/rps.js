@@ -16,12 +16,15 @@ function Draw(){
 function Lizard(){
 	this.type = 'Lizard';
 };
+function Spock(){
+	this.type = 'Spock';
+};
 
 function Rules(){
 	this.trump = {	"Rock": {"Scissors": "crushes","Lizard" : "crushes"},
 					"Paper" : {"Rock" : "cover"},
 					"Scissors" : {"Paper":"cut"},
-					"Lizard" :{"Paper": "eats"}
+					"Lizard" :{"Paper": "eats", "Spock" : "poisons"}
 				};	
 };
 
