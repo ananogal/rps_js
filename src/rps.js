@@ -22,9 +22,10 @@ function Spock(){
 
 function Rules(){
 	this.trump = {	"Rock": {"Scissors": "crushes","Lizard" : "crushes"},
-					"Paper" : {"Rock" : "cover"},
-					"Scissors" : {"Paper":"cut"},
-					"Lizard" :{"Paper": "eats", "Spock" : "poisons"}
+					"Paper" : {"Rock" : "cover", "Spock": "disproves"},
+					"Scissors" : {"Paper":"cut", "Lizard" : "decapitates"},
+					"Lizard" :{"Paper": "eats", "Spock" : "poisons"},
+					"Spock":{"Scissors" :"smashes", "Rock":"vaporizes"}
 				};	
 };
 

@@ -27,6 +27,7 @@ describe('To play Rock Papper Scissors', function() {
 			scissors = new Scissors();	
 			rules = new Rules();
 			lizard = new Lizard();		
+			spock = new Spock();
 		});
 		
 		it('rock and scissors', function(){
@@ -72,11 +73,45 @@ describe('To play Rock Papper Scissors', function() {
 			expect(rules.decidesWinner(lizard, paper)).toEqual(lizard);
 		});
 
+		it('paper and lizard', function(){
+			expect(rules.decidesWinner(paper, lizard)).toEqual(lizard)
+		});
+
 		it('lizard and Spock', function() {
-			spock = new Spock();
 			expect(rules.decidesWinner(lizard, spock)).toEqual(lizard)
 		});
+
+		it('Spock and lizard', function(){
+			expect(rules.decidesWinner(spock, lizard)).toEqual(lizard);
+		});
+
+		it('Spock and scissors', function(){
+			expect(rules.decidesWinner(spock, scissors)).toEqual(spock)
+		});
+
+		it('scissors and lizard', function(){
+			expect(rules.decidesWinner(scissors, lizard)).toEqual(scissors);
+		});
+
+		it('lizard and scissors', function(){
+			expect(rules.decidesWinner(lizard, scissors)).toEqual(scissors);
+		});
+
+		it('paper and Spock', function(){
+			expect(rules.decidesWinner(paper, spock)).toEqual(paper);
+		});
+
+		it('Spock and paper', function(){
+			expect(rules.decidesWinner(spock, paper)).toEqual(paper);
+		});
+
+		it('Spock and rock', function(){
+			expect(rules.decidesWinner(spock, rock)).toEqual(spock);
+		});
+
+		it('rock and Spock', function(){
+			expect(rules.decidesWinner(rock, spock)).toEqual(spock);
+		});
+
 	});
-
-
 });
