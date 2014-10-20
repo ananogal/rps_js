@@ -24,12 +24,20 @@ $('a').each(function() {
 	var winner = rules.decidesWinner(playerChoice.data(), $(computerChoice).data());
 
 $('#msg').text('');
-$('#playerchoices').text('You played : ' + $(playerChoice).data('type') +  ' vs. Computer : ' + $(computerChoice).data('type'));
+$('#playerchoices').text('You played ' + $(playerChoice).data('type') +  ' --------- vs ---------  ' + $(computerChoice).data('type'));
+	var winningPlayer;
+	if(winner === playerChoice){
+		winningPlayer = 'YOU'
+	}
+	else{
+		winningPlayer = 'the COMPUTER'
+	};
+
 if(winner.type === 'Draw') {
 	$('#result').text("It's a DRAW !!!");
 }
 else{
-	$('#result').text('And the winner is ' + winner.type + '!!!');
+	$('#result').text('And the winner is... ' + winningPlayer + '!!!');
 }
 });
 });
