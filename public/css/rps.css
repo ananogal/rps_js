@@ -14,9 +14,6 @@ body{
 	margin-top: 5%;
 }
 
-header{
-}
-
 header p{
 	color: white;
 	}
@@ -36,18 +33,19 @@ aside{
 
 header h3 {
 	color: rgb(255, 243, 255);
-	padding-top: 3%;
+/*	padding-top: 3%;*/
 	padding-bottom: 3%;
 	font-size: 2em;
 }
 #playerchoices {
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
+
 #result {
 	font-size: 2em;
 	margin-top: 1em;
 	margin-bottom: 1em;
-	font-size: 3em;
+	font-size: 2em;
 	color: white;
 	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
 	line-height: 1.2em;
@@ -57,14 +55,12 @@ header h3 {
 	background-color: rgb(26, 58, 138);
 	opacity: 0.6;
 	border-radius: 50% / 10%;
-
     
 }
 
 
 #playchoices{
 	display: inline;
-
 }
 
 #lizard{
