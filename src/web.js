@@ -26,7 +26,7 @@ $('a').each(function() {
 $('#msg').text('');
 $('#playerchoices').text('You played ' + $(playerChoice).data('type') +  ' --------- vs ---------  ' + $(computerChoice).data('type'));
 	var winningPlayer;
-	if(winner === playerChoice){
+	if(winner.type === playerChoice.data('type')){
 		winningPlayer = 'YOU'
 	}
 	else{
