@@ -1,0 +1,70 @@
+body{
+	width:60%;
+	text-align: center;
+	margin-left: 20%;
+	color: rgb(26, 58, 138);
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+
+}
+
+header{
+	padding-top: 6%;
+	padding-bottom: 2%;
+}
+
+header h1{
+	color: rgb(1,3,6);
+	font-size: 3em;
+}
+
+header h3 {
+	color: rgb(112, 145, 228);
+}
+
+#main{
+	background-color: rgb(26, 58, 138);
+	opacity: 0.6;
+	
+}
+
+#playchoices{
+	display: inline;
+
+}
+
+#lizard{
+	padding-top: 4%;
+	
+
+}
+
+#choicesmiddle{
+	padding-bottom: 2%;
+
+
+}
+
+#scissors{
+	padding-right: 5%;
+	padding-bottom: 2%;
+}
+
+#spock{
+	padding-left: 9%;
+	padding-bottom: 2%;
+	
+}
+
+
+#paper{
+	padding-left: 5%;
+	padding-bottom: 4.5%;
+}
+
+#rock{
+	padding-bottom: 4%;
+	padding-left: 2.5%;
+
+
+}
+
