@@ -25,4 +25,4 @@ Enter the spec directory ``$cd rps_js/spec``
 and open the Spec file: ``$ open SpecRunner.html``
 
 ###In Code
-Check it out here:
+Check it out here: https://ana-rps-js.herokuapp.com/
