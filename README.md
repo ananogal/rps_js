@@ -21,7 +21,8 @@ Basic Rules
 Clone the repository: ``$ https://github.com/ananogal/rps_js.git`` <br/>
 
 ###In Tests
-Enter the directory and open the Spec file: ``$ open SpecRunner.html``
+Enter the spec directory ``$cd rps_js/spec``
+and open the Spec file: ``$ open SpecRunner.html``
 
 ###In Code
-Enter the directory and open the html file: ``$ open rps.html``
+Check it out here:
